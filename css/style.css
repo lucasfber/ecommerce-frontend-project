@@ -1,0 +1,18 @@
+* {
+  font-family: Calibri;
+}
+header {
+  overflow: auto;
+}
+.btn-menu {
+  font-size: 22px;
+  display: block;
+  float: left;
+}
+
+.logo {
+  float: left;
+  display: block;
+  width: 62px;
+  margin: 0 auto;
+}
