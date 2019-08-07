@@ -63,6 +63,7 @@ header {
   background-color: #262a32;
   margin: 6px 0;
 }
+/* MENU */
 
 .menu {
   width: 100%;
@@ -106,6 +107,7 @@ header {
   border-top: 7px solid #fff;
 }
 
+/* SUBMENU */
 li.submenu-item {
   position: relative;
 }
@@ -142,11 +144,184 @@ ul.submenu li {
   min-height: 274px;
   border-radius: 4px;
 }
-
-.main-banner {
-  margin: 20px 20px 20px 24px;
+/* CONTENT */
+.content {
+  padding: 20px 0 20px 0;
+}
+.slider {
+  max-width: 100%;
   background: url('../img/banner-1.jpg') no-repeat center right;
   background-size: cover;
+  color: #fff;
+  padding: 32px 15px;
+  margin: 0 15px 22px 15px;
+  border-radius: 3px;
+}
+
+.slider h1 {
+  font-size: 1.55em;
+  font-weight: bold;
+}
+.slider p {
+  font-size: 14px;
+  margin: 40px 0;
+}
+
+.slider .btn-view-more {
+  color: #fff;
+  display: block;
+  max-width: 154px;
+  height: 42px;
+  margin: 20px auto 40px auto;
+  border: 1px solid #fff;
+  padding: 10px 34px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.carrousel-controls {
+  padding: 0;
   max-width: 100%;
-  height: 470px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dots {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.dot.active {
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
+}
+
+/* POPULAR ITEMS */
+.popular-items {
+  background-color: #262a32;
+  padding: 33px 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.popular-items h3 {
+  font-size: 1.125em;
+  position: relative;
+}
+
+.popular-items h3::before,
+.popular-items h3::after {
+  content: '';
+  width: 25%;
+  height: 2px;
+  display: table;
+  position: absolute;
+  top: 50%;
+  background-color: #fff;
+  opacity: 0.1;
+}
+
+.popular-items h3::before {
+  left: 0;
+}
+
+.popular-items h3::after {
+  right: 0;
+}
+
+.product-item {
+  margin: 24px 0;
+}
+
+.product-item img {
+  max-width: 100%;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.product-info {
+  background-color: #fff;
+  padding: 20px 45px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.product-info .description {
+  font-size: 1em;
+  color: #45413e;
+}
+
+.product-info .price {
+  color: #011847;
+  font-size: 0.875;
+  margin-top: 22px;
+}
+
+/* BANNER */
+.banner {
+  background: url('../img/banner-osf.jpg') no-repeat center center / cover;
+  max-width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px 64px 20px;
+}
+
+.banner h2 {
+  font-size: 1.675em;
+}
+
+.banner h4 {
+  font-size: 0.78em;
+  font-weight: lighter;
+  margin: 40px 0 0 0;
+}
+
+/* BENEFITS */
+.benefits {
+  max-width: 100%;
+  background-color: #45413e;
+  padding: 30px 16px;
+}
+.benefit {
+  overflow: auto;
+}
+
+.benefit-icon,
+.benefit-description {
+  float: left;
+  width: 50%;
+}
+
+.benefit-icon img {
+  display: block;
+}
+
+.benefit-icon {
+  padding-top: 17px;
+  padding-left: 30px;
+}
+
+.benefit-description h5 {
+  font-size: 1.125em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.benefit-description p {
+  color: #868380;
+  font-size: 0.875em;
+  line-height: 18px;
 }
