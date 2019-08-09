@@ -16,11 +16,8 @@ header {
   text-align: center;
 }
 
-.logo {
+.header__logo-img {
   margin: 10px;
-}
-
-.logo img {
   width: 49px;
   height: 49px;
 }
@@ -30,13 +27,20 @@ header {
   float: left;
   margin-left: 15px;
   margin-top: 18px;
-  display: none;
+  display: block;
+}
+
+.btn-menu__menu-bar {
+  width: 18px;
+  height: 2px;
+  background-color: #262a32;
+  margin: 6px 0;
 }
 
 .btn-close {
   cursor: pointer;
   float: left;
-  display: block;
+  display: none;
 }
 
 .btn-close:before,
@@ -58,12 +62,6 @@ header {
   transform: rotate(-45deg);
 }
 
-.btn-menu .menu-bar {
-  width: 18px;
-  height: 2px;
-  background-color: #262a32;
-  margin: 6px 0;
-}
 /* MENU */
 
 .menu {
@@ -75,28 +73,25 @@ header {
 
 .menu a {
   color: #fff;
-  font-size: 16px;
 }
 
-.menu ul {
-  padding: 0;
-}
-
-.menu-item {
+.menu__first-level-item {
   text-align: left;
   position: relative;
   margin: 34px 0;
 }
 
-.menu-item > a {
+.menu__first-level-label {
+  font-size: 16px;
   font-weight: 700;
+  color: #fff;
 }
 
-.menu-item:nth-child(1) {
+.menu__first-level-item:nth-child(1) {
   margin: 0 0 20px 0;
 }
 
-.menu-item .arrow-down {
+.menu__first-level-arrow-down {
   position: absolute;
   top: 7px;
   right: 0;
@@ -108,12 +103,18 @@ header {
   border-top: 7px solid #fff;
 }
 
-/* SUBMENU */
-li.submenu-item {
-  position: relative;
+.menu__second-level {
+  width: 60%;
+  padding-left: 10px;
+  display: block;
 }
 
-li.submenu-item .arrow-down {
+.menu__second-level-item {
+  position: relative;
+  margin: 10px 0;
+}
+
+.menu__second-level-arrow-down {
   position: absolute;
   top: 10px;
   right: 0;
@@ -125,33 +126,33 @@ li.submenu-item .arrow-down {
   border-top: 7px solid #fff;
 }
 
-ul.submenu {
-  width: 60%;
+.menu__third-level {
   padding-left: 10px;
-  display: none;
+  display: block;
 }
 
-ul.submenu li {
-  margin: 10px 0;
+.menu__third-level-item {
+  margin: 12px 0;
 }
 
-.submenu-item ul {
-  padding-left: 10px;
+.menu__third-level-link {
+  padding: 0 20px 10px 0;
 }
 
-.menu-img img {
+.menu__image {
   width: 100%;
   max-width: 272px;
   min-height: 274px;
   border-radius: 4px;
 }
+
 /* CONTENT */
 .content {
   padding-top: 20px;
 }
 .slider {
   max-width: 100%;
-  background: url('../img/banner-1.jpg') no-repeat center right;
+  background: url('../../img/banner-1.jpg') no-repeat center right;
   background-size: cover;
   color: #fff;
   padding: 32px 15px;
@@ -272,7 +273,7 @@ ul.submenu li {
 
 /* BANNER */
 .banner {
-  background: url('../img/banner-osf.jpg') no-repeat center center / cover;
+  background: url('../../img/banner-osf.jpg') no-repeat center center / cover;
   max-width: 100%;
   color: #fff;
   text-align: center;
