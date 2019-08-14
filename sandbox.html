@@ -221,11 +221,17 @@
                 <div class="modal-login">
                   <form action="" class="modal-login__form">
                     <h2>Sign in</h2>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" required>
-                    <label for="password">Password</label>
-                    <input type="password" id="password" required><button type="button" class="modal-login__form-toggle"><i>O</i></button></input>
-                    <button type="submit">LOGIN</button>
+                    <div class="modal-login__form-box">
+                      <label for="email" class="label">Email</label>
+                      <input type="email" id="email" required>
+                    </div>
+                    <div class="modal-login__form-box">
+                      <label for="password">Password</label>
+                      <span><a href="404.html">forgot password</a></span>
+                      <input type="password" id="password" required>
+                      <span type="button" class="modal-login__form-toggle"><i>(o)</i></span>
+                    </div>
+                    <button type="submit" class="modal-login__form-btn-login">LOGIN</button>
                     <a href="404.html">I don't have an account</a>
                   </form>
                 </div>
