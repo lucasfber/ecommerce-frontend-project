@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="dist/css/flaticon.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="sandbox.css">
+    <link rel="stylesheet" href="css/sandbox.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
     <title>Document</title>
   </head>
   <body>
@@ -204,15 +204,25 @@
               <li class="menu__first-level-item">
                 <a class="menu__first-level-label" href="#">EN</a>
                 <div class="menu__first-level-arrow-down"></div>
+                <ul class="dropdown-menu">
+                    <li><a href="#">RO</a></li>
+                    <li><a href="#">UA</a></li>
+                  </ul>
               </li>
               <li class="menu__first-level-item">
                 <a class="menu__first-level-label" href="#">&#36; US</a>
                 <div class="menu__first-level-arrow-down"></div>
+                <ul class="dropdown-menu">
+                  <li><a href="#">&euro; EU</a></li>
+                  <li><a href="#">RON</a></li>
+                  <li><a href="">UAH</a></li>
+                </ul>
               </li>
             </ul>
           </nav>
           <div class="actions-bar">
             <ul>
+              <!-- ACTION BAR ICONS -->
               <li class="actions-bar__item">
                 <span><i class="flaticon-research"></i></span>
               </li class="actions-bar__item">
@@ -223,16 +233,18 @@
                     <h2>Sign in</h2>
                     <div class="modal-login__form-box">
                       <label for="email" class="label">Email</label>
-                      <input type="email" id="email" required>
+                      <input type="email" id="email"  required>
                     </div>
                     <div class="modal-login__form-box">
                       <label for="password">Password</label>
                       <span><a href="404.html">forgot password</a></span>
-                      <input type="password" id="password" required>
-                      <span type="button" class="modal-login__form-toggle"><i>(o)</i></span>
+                      <input type="password" id="password" pattern="(?=.*\d)(?=.*\W+)(?=.*[a-z])(?=.*[A-Z]).{6,}" title="At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character" required>
+                      <span type="button" class="modal-login__form-toggle" id="toggler"><i class="flaticon-eye-shape-variant"></i></span>
                     </div>
-                    <button type="submit" class="modal-login__form-btn-login">LOGIN</button>
-                    <a href="404.html">I don't have an account</a>
+                    <div class="modal-login__form-box">
+                      <button type="submit" class="modal-login__form-btn-login">LOGIN</button>
+                      <a href="404.html">I don't have an account</a>
+                    </div>
                   </form>
                 </div>
               </li>
@@ -250,6 +262,7 @@
     <div class="teste" style="margin-top: 500px;">
       <a href="index.html">LOG</a>
     </div>
-    <section style="height: 9000px;"></section>
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/script.js"></script>
   </body>
 </html>
